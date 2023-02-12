@@ -12,6 +12,7 @@
     "@next/font": "13.1.2",
     "@windmill/react-ui": "^0.6.0",
     "axios": "^1.2.2",
+    "emailjs": "^4.0.1",
     "leaflet": "^1.9.3",
     "next": "13.1.2",
     "nodemailer": "^6.9.0",
