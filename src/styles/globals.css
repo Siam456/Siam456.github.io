@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  @apply text-slate-900 dark:text-white;
+}
+.background {
+  @apply bg-white dark:bg-slate-800;
+}
+.background_nav_footer {
+  @apply bg-gray-200 dark:bg-slate-900;
+}
+.title {
+  @apply text-center py-3 mt-14 mb-3 w-3/4 sm:w-2/4 m-auto font-bold text-3xl border-b-2 border-green-600;
+}
+.description {
+  @apply text-center mb-16 font-semibold text-gray-600 dark:text-gray-300;
+}
+.japan-filter {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #15803d;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
