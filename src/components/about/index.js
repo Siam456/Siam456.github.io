@@ -46,12 +46,14 @@ export default function About() {
             <span className=" font-bold">Mail: </span>{" "}
             hasibul15-11038@diu.edu.bd
           </p>
-          <div className=" flex justify-center">
-            <Button
-              className={`py-2 px-12 my-6 text-sm font-medium text-gray-900 dark:text-gray-100 bg-green-600 hover:bg-green-700 duration-300 `}
+          <div className=" flex justify-center sm:justify-start">
+            <a
+              href="./cv.pdf"
+              className={`py-2 rounded-md text-white px-12 my-6 text-sm font-medium  dark:text-gray-100 bg-green-600 hover:bg-green-700 duration-300 `}
+              target="_blank"
             >
               Download Resume
-            </Button>
+            </a>
           </div>
         </div>
       </div>

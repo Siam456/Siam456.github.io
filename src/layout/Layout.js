@@ -19,7 +19,7 @@ const Layout = ({ title, description, children }) => {
 
         <Navbar />
 
-        <>{children}</>
+        <div className="pt-5">{children}</div>
 
         <div className="w-full">
           {/* <hr className="hr-line"></hr> */}

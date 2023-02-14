@@ -12,10 +12,19 @@ const useMailSubmit = () => {
   const onSubmit = (data) => {
     alert("Email send successfully!!");
 
-    setValue("name");
-    setValue("email");
-    setValue("subject");
-    setValue("body");
+    axios
+      .post("http://localhost:9001/api/email", {
+        email: "hasibulsiam27@gmail.com",
+      })
+      .then((res) => {
+        alert("Send Mail To You");
+        setValue("name");
+        setValue("email");
+        setValue("subject");
+        setValue("body");
+        setEmail("");
+      })
+      .catch((e) => console.log(e));
     // axios
     //   .post("/api/email", data)
     //   .then((res) => alert())
