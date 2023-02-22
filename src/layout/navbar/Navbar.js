@@ -93,7 +93,7 @@ export default function Navbar() {
           } duration-500 h-full bg-gray-300 dark:bg-gray-800 top-0 block md:hidden `}
         >
           <div className=" bg-gray-400 dark:bg-gray-900 p-4 flex justify-between">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="/" className="flex items-center">
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                 Hasibul <span className=" text-green-600">Hasan</span>
               </span>
