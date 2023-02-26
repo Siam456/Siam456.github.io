@@ -62,3 +62,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
