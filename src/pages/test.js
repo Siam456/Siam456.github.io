@@ -10,6 +10,7 @@ export default function test() {
     navigator.mediaDevices
       .getUserMedia({
         video: {
+          facingMode: "environment",
           width: {
             min: 1280,
             ideal: 1920,
