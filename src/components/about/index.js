@@ -20,7 +20,7 @@ export default function About() {
         <div className="w-full px-4 md:w-1/2 h-auto text-left">
           <h1 className=" font-bold text-4xl pb-6">I'm Hasibul Hasan!!!</h1>
           <p className="pb-6">
-            Currently working at{" "}
+            I am currently working at{" "}
             <Link
               rel="noreferrer"
               target="_blank"
@@ -29,14 +29,14 @@ export default function About() {
             >
               Brain Station 23
             </Link>{" "}
-            as a associate software engineer . We're mainly responsible for
-            designing, developing & testing enterprise system. I'm highly
-            interested in Distributed Systems, Cloud Computing, and System
-            Design. I would love anything that's challenging, and makes me learn
+            as an associate software engineer. We're mainly responsible for
+            designing, developing, and testing enterprise systems. I'm highly
+            interested in distributed systems, cloud computing, and system
+            design. I would love anything that's challenging and makes me learn
             something new.
           </p>
           <p className="pb-6">
-            In my leasure time, I like to learn developing, Playing Game....
+            In my leisure time, I like to learn by developing and playing games.
           </p>{" "}
           <hr className="hr-line py-6"></hr>
           <p>
