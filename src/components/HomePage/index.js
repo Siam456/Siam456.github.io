@@ -22,7 +22,7 @@ export default function index() {
           </h1>
           <p className="py-1 font-semibold text-xl text-white dark:text-white">
             Software Engineer | Full Stack Web Developer | Mobile Application
-            Developer siam{" "}
+            Developer{" "}
           </p>
           <hr className="w-[80vw] m-auto my-5"></hr>
           <div>
