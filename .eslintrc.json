@@ -1,0 +1,77 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "paths": {
+          "@": ["./src"]
+        }
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "next/core-web-vitals",
+    "airbnb",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier", "@typescript-eslint", "import"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-console": "error",
+    "@next/next/no-img-element": "off",
+    "no-bitwise": [2, { "allow": ["^", "&"] }],
+    "func-names": "off",
+    "prefer-arrow-callback": "off",
+    "func-style": "off",
+    "no-plusplus": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-nested-ternary": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "tsx": "never",
+        "ts": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "jsx-a11y/control-has-associated-label": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.{ts,tsx}"],
+      "rules": {
+        "no-undef": "off",
+        "react/button-has-type": "off"
+      }
+    }
+  ]
+}
