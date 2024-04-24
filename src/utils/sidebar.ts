@@ -20,31 +20,21 @@ const sidebar = [
     name: 'Services',
   },
   {
-    href: '#experiences',
-    icon: QueueListIcon,
-    name: 'Experiences',
-  },
-  {
     href: '#projects',
     icon: QueueListIcon,
     name: 'Projects',
   },
   {
+    href: '#experiences',
+    icon: QueueListIcon,
+    name: 'Experiences',
+  },
+
+  {
     href: '#contact',
     icon: ChatBubbleLeftRightIcon,
     name: 'Contact',
   },
-  // {
-  //   href: '/settings',
-  //   icon: CogIcon,
-  //   name: 'Settings',
-  // },
-
-  // {
-  //   href: '/dashboard/dealer',
-  //   icon: GlobeAsiaAustraliaIcon,
-  //   name: 'Dealers',
-  // },
 ];
 
 export default sidebar;

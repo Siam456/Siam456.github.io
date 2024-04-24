@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader } from '../ui/card';
 
 export default function ExperienceCard({
@@ -14,10 +14,12 @@ export default function ExperienceCard({
   description?: string[];
   skills?: string[];
 }) {
+  const [showAllSkills, setShowAllSkills] = useState(false);
+
   return (
     <div className="is-active group relative flex items-center justify-between md:justify-normal md:even:flex-row-reverse">
       <div
-        className="after:border-1 flex h-3 w-3 shrink-0 items-center justify-center rounded-full shadow before:absolute before:left-2 before:h-full before:-translate-x-1/2 group-[.is-active]:bg-indigo-600 md:order-1 md:group-odd:ml-7 md:group-odd:translate-x-1/2 md:group-even:mr-7 md:group-even:-translate-x-1/2 
+        className="after:border-1 ml-[15px] flex h-3 w-3 shrink-0 items-center justify-center rounded-full shadow before:absolute before:left-2 before:h-full before:-translate-x-1/2 group-[.is-active]:bg-indigo-600 md:order-1 md:group-odd:ml-7 md:group-odd:translate-x-1/2 md:group-even:mr-7 md:group-even:-translate-x-1/2 
                   "
       />
 
@@ -45,13 +47,33 @@ export default function ExperienceCard({
 
               <div className="mt-4 flex flex-wrap gap-2">
                 {skills &&
-                  skills.map((skill, idx) => (
-                    <span
-                      key={`skill-${idx + 1}`}
+                  skills
+                    .slice(0, showAllSkills ? skills.length : 2)
+                    .map((skill, idx) => (
+                      <span
+                        key={`skill-${idx + 1}`}
+                        className="rounded-md bg-accent-foreground bg-opacity-10 px-2 py-1 text-xs text-accent"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+
+                {skills &&
+                  skills.length > 2 &&
+                  (!showAllSkills ? (
+                    <button
                       className="rounded-md bg-accent-foreground bg-opacity-10 px-2 py-1 text-xs text-accent"
+                      onClick={() => setShowAllSkills(true)}
                     >
-                      {skill}
-                    </span>
+                      +{skills.length - 2} other skills
+                    </button>
+                  ) : (
+                    <button
+                      className="rounded-md bg-accent-foreground bg-opacity-10 px-2 py-1 text-xs text-accent"
+                      onClick={() => setShowAllSkills(false)}
+                    >
+                      - Show less
+                    </button>
                   ))}
               </div>
             </CardContent>

@@ -14,10 +14,10 @@ export default function ServiceCardSection() {
             <div className="flex flex-col gap-4 text-sm text-muted-foreground">
               {service.description}
 
-              <ul className=" ml-5">
+              <span className=" ml-5">
                 {service.skills.map((skill, index) => (
-                  <>
-                    <li key={`skill-${index + 1}`} className="list-disc">
+                  <ul key={`skill-${index + 1}`}>
+                    <li className="list-disc">
                       {skill.name} : {skill.description}
                     </li>
                     {skill.subSkills && skill.subSkills.length > 0 && (
@@ -35,9 +35,9 @@ export default function ServiceCardSection() {
                         ))}
                       </ul>
                     )}
-                  </>
+                  </ul>
                 ))}
-              </ul>
+              </span>
             </div>
           </CardContent>
         </Card>

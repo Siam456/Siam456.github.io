@@ -1,7 +1,6 @@
-
 import * as React from 'react';
 import Link, { LinkProps } from 'next/link';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 // import { ViewVerticalIcon } from '@radix-ui/react-icons';
 
 // import { docsConfig } from "@/config/docs"
@@ -31,12 +30,12 @@ function MobileLink({
   children,
   ...props
 }: MobileLinkProps) {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <Link
       href={href}
       onClick={() => {
-        router.push(href.toString());
+        // router.push(href.toString());
         onOpenChange?.(false);
       }}
       className={cn(className)}
@@ -108,7 +107,11 @@ export default function MobileNav() {
             {sidebar?.map(
               (item) =>
                 item.href && (
-                  <MobileLink key={item.href} href="/" onOpenChange={setOpen}>
+                  <MobileLink
+                    key={item.href}
+                    href={item.href}
+                    onOpenChange={setOpen}
+                  >
                     {item.name}
                   </MobileLink>
                 ),

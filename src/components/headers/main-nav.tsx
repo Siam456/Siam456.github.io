@@ -18,7 +18,7 @@ function MainNav({ className, ...props }: React.HTMLAttributes<HTMLElement>) {
         <Link
           key={`sidebar-item-${index + 1}`}
           href={item.href}
-          className={`text-sm font-medium transition-colors hover:text-primary ${router.pathname === item.href ? '' : 'text-muted-foreground'}`}
+          className={`text-sm font-medium transition-colors hover:opacity-80 ${router.asPath === item.href || router.asPath === `/${item.href}` ? '' : 'text-muted-foreground'}`}
         >
           {item.name}
         </Link>

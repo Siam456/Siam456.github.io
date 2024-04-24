@@ -21,8 +21,8 @@ export default function RecommendationSection() {
   };
   return (
     <section
-      className="container relative
-items-center justify-between gap-10 space-y-2"
+      className=" relative items-center justify-between
+gap-10 space-y-2 md:container max-md:px-3"
     >
       <SectionTitle
         title="Recommendations"
@@ -50,7 +50,7 @@ items-center justify-between gap-10 space-y-2"
                       <a
                         target="_blank"
                         href={Recommendation.linkedin}
-                        className="mt-4 text-5xl font-extrabold duration-300 hover:underline"
+                        className="mt-4 text-2xl font-extrabold duration-300 hover:underline md:text-5xl"
                         rel="noreferrer"
                       >
                         {Recommendation.name}

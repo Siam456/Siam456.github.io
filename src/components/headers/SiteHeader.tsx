@@ -21,7 +21,11 @@ export default function SiteHeader() {
         <div className="flex items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center">
             <MobileNav />
-            <Link href="/" target="_blank" rel="noreferrer">
+            <Link
+              href="https://github.com/Siam456"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div
                 className={cn(
                   buttonVariants({
@@ -34,7 +38,11 @@ export default function SiteHeader() {
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
-            <Link href="/" target="_blank" rel="noreferrer">
+            <Link
+              href="https://twitter.com/HasibulSiam8"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div
                 className={cn(
                   buttonVariants({

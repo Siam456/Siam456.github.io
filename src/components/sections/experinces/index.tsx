@@ -18,9 +18,9 @@ export default function ExperienceSection() {
           description="My work experience and education background."
         />
 
-        <Tabs defaultValue="experience">
+        <Tabs className="mx-auto xl:w-5/6" defaultValue="experience">
           <TabsList className="mx-auto grid w-full max-w-xl grid-cols-2">
-            <TabsTrigger value="experience">Word Experience</TabsTrigger>
+            <TabsTrigger value="experience">Work Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
           <TabsContent value="experience">

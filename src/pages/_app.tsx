@@ -30,7 +30,6 @@ export default function App({
 
   return (
     <div className={inter}>
-      {/* <Head></Head> */}
       <ThemeProvider
         attribute="class"
         defaultTheme="system"
