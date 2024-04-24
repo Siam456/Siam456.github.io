@@ -12,14 +12,14 @@ export default function Document() {
         <NextScript />
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-80CBVG6JYD"
         />
         <Script id="gtag-config" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}');
+            gtag('config', 'G-80CBVG6JYD');
           `}
         </Script>
       </body>
