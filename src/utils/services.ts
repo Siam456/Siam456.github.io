@@ -54,9 +54,9 @@ const ServiceData = [
           'Leveraging Nest.js for building efficient and maintainable server-side applications.',
       },
       {
-        name: 'Flask',
+        name: 'FastAPI',
         description:
-          'Proficient in Flask for building web applications and APIs.',
+          'Proficient in FastAPI for building web applications and APIs.',
       },
       {
         name: 'RESTful APIs',

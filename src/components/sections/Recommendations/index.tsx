@@ -30,7 +30,7 @@ gap-10 space-y-2 md:container max-md:px-3"
       />
 
       <div className="relative">
-        <Carousel className="relative mx-auto lg:w-[calc(100%-200px)]">
+        <Carousel className="relative mx-auto max-sm:h-screen lg:w-[calc(100%-200px)]">
           <CarouselContent>
             {RecommendationData.map((Recommendation, index) => (
               <CarouselItem
