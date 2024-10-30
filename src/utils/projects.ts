@@ -10,17 +10,19 @@ const ProjectData = [
   },
   {
     id: 2,
-    title: 'Project 2',
-    description: 'This is a project',
-    img: 'https://via.placeholder.com/150',
-    link: 'https://www.google.com',
+    title: 'Upendnow',
+    description:
+      'A content creation co-pilot tool that streamlines pre-production workflows by generating creative briefs, scripts, and storyboards based on project inputs. Perfect for enhancing storytelling, planning, and visualizing scenes before production.',
+    img: 'https://frontend.dev.upendnow.cloudexpress.app/assets/upendnowLogo-BSCDlSZf.png',
+    link: 'https://frontend.dev.upendnow.cloudexpress.app/',
   },
   {
     id: 3,
-    title: 'Project 3',
-    description: 'This is a project',
-    img: 'https://via.placeholder.com/150',
-    link: 'https://www.google.com',
+    title: 'Fitsomnia',
+    description:
+      'Contributed to a social platform for fitness enthusiasts. Implemented a serverless Lambda function with Python to process images and videos asynchronously. This transition from synchronous backend processing resulted in a 30% performance improvement',
+    img: 'https://play-lh.googleusercontent.com/Z5i4BRAOp_H7ZbaQalcavpUn29gmkR8XhS_4tT4C69gwhKO8F5cEIuezkxa9VZ7hMLTi=w240-h480-rw',
+    link: 'https://fitsomnia.com/',
   },
 ];
 

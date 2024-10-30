@@ -10,6 +10,27 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        {/* <Script
+          src="https://cdn.jsdelivr.net/gh/brainstationrandd/chatbot-widget-v2@main/script-v7.js"
+          strategy="beforeInteractive"
+        /> */}
+        <Script
+          src="http://localhost:3001/widgets/script-backup.js"
+          strategy="beforeInteractive"
+          chatbot_id="54"
+          bubbleBorder="false"
+          bubbleAlignment="vertical"
+          voice="true"
+          feedback="false"
+          headerColor="white"
+          headerColorShade="0"
+          buddleColor="white"
+          buddleColorShade="0"
+          textColor="black"
+          textColorShade="700"
+          chatHistory="false"
+          defer
+        />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-80CBVG6JYD"
