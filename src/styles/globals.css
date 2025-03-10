@@ -76,7 +76,7 @@
     @apply bg-background text-foreground;
   }
 
-  .carousel:nth-child(1) .card {
+  /* .carousel:nth-child(1) .card {
     @apply bg-red-500;
   }
 
@@ -98,5 +98,5 @@
 
   .carousel:nth-child(6) .card {
     @apply bg-amber-500;
-  }
+  } */
 }

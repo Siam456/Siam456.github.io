@@ -34,10 +34,10 @@ gap-10 space-y-2 md:container max-md:px-3"
           <CarouselContent>
             {RecommendationData.map((Recommendation, index) => (
               <CarouselItem
-                className="carousel flex flex-col items-center justify-center"
+                className=" flex flex-col items-center justify-center"
                 key={`card-${index + 1}`}
               >
-                <Card className="card flex-1 text-white shadow">
+                <Card className="card flex-1  shadow-lg">
                   <CardContent className="h-full items-center justify-center p-6 md:flex">
                     <div className="flex flex-1 items-center justify-center">
                       <img
@@ -55,11 +55,11 @@ gap-10 space-y-2 md:container max-md:px-3"
                       >
                         {Recommendation.name}
                       </a>
-                      <div className=" rounded-lg bg-white/20 p-4">
-                        <p className=" text-lg text-gray-50">
+                      <div className=" rounded-lg font-semibold bg-white/80 p-4">
+                        <p className=" text-lg text-foreground">
                           {Recommendation.designation}
                         </p>
-                        <p className=" text-sm text-gray-300">
+                        <p className=" text-sm text-gray-600">
                           at {Recommendation.company}
                         </p>
                       </div>
@@ -99,7 +99,7 @@ gap-10 space-y-2 md:container max-md:px-3"
 
                         {Recommendation.recommendation.length > 300 && (
                           <button
-                            className="mt-2 text-gray-300"
+                            className="mt-2 text-gray-600"
                             onClick={toggleTextTruncation}
                           >
                             {isTextTruncated ? 'Show More' : 'Show Less'}

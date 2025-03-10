@@ -12,9 +12,9 @@ const ProjectData = [
     id: 2,
     title: 'Upendnow',
     description:
-      'A content creation co-pilot tool that streamlines pre-production workflows by generating creative briefs, scripts, and storyboards based on project inputs. Perfect for enhancing storytelling, planning, and visualizing scenes before production.',
-    img: 'https://frontend.dev.upendnow.cloudexpress.app/assets/upendnowLogo-BSCDlSZf.png',
-    link: 'https://frontend.dev.upendnow.cloudexpress.app/',
+      'A content creation co-pilot tool that streamlines pre-production workflows by generating creative briefs, scripts, and storyboards based on project inputs by AI. Perfect for enhancing storytelling, planning, and visualizing scenes before production.',
+    img: 'https://upendnow.xyz/assets/upendnowLogo-BSCDlSZf.png',
+    link: 'https://upendnow.xyz/',
   },
   {
     id: 3,
@@ -24,6 +24,7 @@ const ProjectData = [
     img: 'https://play-lh.googleusercontent.com/Z5i4BRAOp_H7ZbaQalcavpUn29gmkR8XhS_4tT4C69gwhKO8F5cEIuezkxa9VZ7hMLTi=w240-h480-rw',
     link: 'https://fitsomnia.com/',
   },
+ 
 ];
 
 export default ProjectData;
