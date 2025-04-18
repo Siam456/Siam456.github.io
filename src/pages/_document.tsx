@@ -10,27 +10,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        {/* <Script
-          src="https://cdn.jsdelivr.net/gh/brainstationrandd/chatbot-widget-v2@main/script-v7.js"
-          strategy="beforeInteractive"
-        /> */}
-        <Script
-          src="http://localhost:3001/widgets/script-backup.js"
-          strategy="beforeInteractive"
-          chatbot_id="54"
-          bubbleBorder="false"
-          bubbleAlignment="vertical"
-          voice="true"
-          feedback="false"
-          headerColor="white"
-          headerColorShade="0"
-          buddleColor="white"
-          buddleColorShade="0"
-          textColor="black"
-          textColorShade="700"
-          chatHistory="false"
-          defer
-        />
+
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-80CBVG6JYD"
@@ -41,6 +21,15 @@ export default function Document() {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-80CBVG6JYD');
+          `}
+        </Script>
+        <Script id="clarity-config" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "r62ppdc4m2");
           `}
         </Script>
       </body>
