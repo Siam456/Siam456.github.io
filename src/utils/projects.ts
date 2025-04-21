@@ -21,10 +21,9 @@ const ProjectData = [
     title: 'Fitsomnia',
     description:
       'Contributed to a social platform for fitness enthusiasts. Implemented a serverless Lambda function with Python to process images and videos asynchronously. This transition from synchronous backend processing resulted in a 30% performance improvement',
-    img: 'https://play-lh.googleusercontent.com/Z5i4BRAOp_H7ZbaQalcavpUn29gmkR8XhS_4tT4C69gwhKO8F5cEIuezkxa9VZ7hMLTi=w240-h480-rw',
+    img: 'https://fitsomnia.com/_next/static/media/logo.9856202f.png',
     link: 'https://fitsomnia.com/',
   },
- 
 ];
 
 export default ProjectData;

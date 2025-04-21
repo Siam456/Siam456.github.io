@@ -16,8 +16,8 @@ items-center justify-between gap-10 space-y-2"
         title="Contact"
         description="Feel free to reach out to me for any queries or collaborations."
       />{' '}
-      <div className="flex flex-col gap-5 md:flex-row">
-        <div className="grid flex-1 grid-cols-1 gap-6">
+      <div className=" flex-col gap-5 md:flex-row">
+        <div className="mb-10 grid flex-1 grid-cols-1 gap-6 md:grid-cols-3">
           <Card>
             <CardHeader>
               <MapPinIcon className=" h-16 " />
