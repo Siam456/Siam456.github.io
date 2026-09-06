@@ -330,6 +330,9 @@ html.dark {
 
 @media (max-width: 640px) {
   .blueprint-plus { display: none; }
+  .hero-blueprint::before,
+  .section-line-left,
+  .section-plus-left { display: none; }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
