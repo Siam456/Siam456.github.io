@@ -386,3 +386,11 @@ html.dark {
 .article-prose ul { margin:28px 0; display:grid; gap:13px; padding-left:20px; list-style:disc; }.article-prose li::marker { color:var(--color-primary); }
 .article-signoff { margin-top:80px; border-top:1px solid var(--color-line); padding-top:28px; }.article-signoff span { display:block; color:var(--color-faint); font-size:10px; text-transform:uppercase; letter-spacing:.1em; }.article-signoff strong { display:block; margin-top:8px; color:var(--color-ink); font-size:18px; }.article-signoff p { margin-top:4px; font-size:13px; line-height:1.6; }
 @media (max-width:767px) { .article-layout { display:block; }.article-toc { display:none; }.article-prose { font-size:16px; line-height:1.8; }.article-prose .article-lede { font-size:20px; }.article-prose h2 { font-size:28px; }.article-prose blockquote { padding-left:20px; font-size:21px; } }
+
+.scope-icon { display:grid; width:46px; height:46px; place-items:center; border:1px solid transparent; border-radius:14px; font-size:20px; transition:transform .25s ease, box-shadow .25s ease; }
+.group:hover .scope-icon { transform:translateY(-3px) rotate(-2deg); box-shadow:var(--shadow-card); }
+.scope-icon-teal { border-color:color-mix(in srgb,#19a58f 24%,transparent); background:color-mix(in srgb,#19a58f 11%,var(--color-surface)); color:#15927f; }
+.scope-icon-violet { border-color:color-mix(in srgb,#7568df 24%,transparent); background:color-mix(in srgb,#7568df 11%,var(--color-surface)); color:#7568df; }
+.scope-icon-amber { border-color:color-mix(in srgb,#d78a34 24%,transparent); background:color-mix(in srgb,#d78a34 11%,var(--color-surface)); color:#c57925; }
+.capability-icon { display:grid; width:34px; height:34px; flex-shrink:0; place-items:center; border-radius:10px; font-size:15px; }
+.capability-icon-teal { background:color-mix(in srgb,#19a58f 13%,var(--color-surface)); color:#15927f; }.capability-icon-blue { background:color-mix(in srgb,#408cc5 13%,var(--color-surface)); color:#408cc5; }.capability-icon-violet { background:color-mix(in srgb,#7568df 13%,var(--color-surface)); color:#7568df; }.capability-icon-amber { background:color-mix(in srgb,#d78a34 13%,var(--color-surface)); color:#c57925; }
