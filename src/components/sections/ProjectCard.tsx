@@ -28,7 +28,17 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
           {project.stack.slice(0, 6).map((tech) => <span key={tech} className="font-mono text-[10px] text-faint">{tech}</span>)}
         </div>
-        {project.url && <a href={project.url} target="_blank" rel="noreferrer" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-ink transition group-hover:text-primary">View project <FiArrowUpRight /></a>}
+        {project.links && project.links.length > 0 ? (
+          <div className="mt-7 flex flex-wrap gap-x-6 gap-y-2">
+            {project.links.map((link) => (
+              <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-semibold text-ink transition group-hover:text-primary">
+                {link.label} <FiArrowUpRight />
+              </a>
+            ))}
+          </div>
+        ) : (
+          project.url && <a href={project.url} target="_blank" rel="noreferrer" className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-ink transition group-hover:text-primary">View project <FiArrowUpRight /></a>
+        )}
       </div>
     </motion.article>
   );

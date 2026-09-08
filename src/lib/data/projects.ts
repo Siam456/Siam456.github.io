@@ -4,8 +4,7 @@ export const projects: ProjectEntry[] = [
   {
     name: "Anomali",
     tagline: "AI-driven SOC pipeline — ThreatStream & Agent Platform",
-    duration: "2024 Jan – Present",
-    current: true,
+    duration: "Apr 2026 – Sep 2026",
     description:
       "A multi-agent investigation pipeline for security operations. Specialized agents enrich and assess alerts, correlate incidents into cases, and produce evidence-backed reports while preserving analyst review at critical decisions.",
     stack: [
@@ -30,9 +29,38 @@ export const projects: ProjectEntry[] = [
     ],
   },
   {
+    name: "FlameCart",
+    tagline: "Full-stack e-commerce monorepo — storefront, dashboard, API",
+    duration: "2026 – 2026",
+    links: [
+      { label: "Store", url: "https://minimalstore-phi.vercel.app/" },
+      { label: "Dashboard", url: "https://material-template-rho.vercel.app/" },
+    ],
+    description:
+      "A personal proof-of-concept split into three independently deployable apps sharing one API: a Next.js storefront, a React admin dashboard, and an Express/Drizzle backend — built to explore a modern, type-safe full-stack architecture end to end, from schema and migrations to a data-dense admin UI.",
+    stack: [
+      "TypeScript",
+      "Express",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "React 19",
+      "TanStack Router",
+      "TanStack Query",
+      "shadcn/ui",
+      "Next.js",
+      "Tailwind CSS",
+    ],
+    highlights: [
+      "Designed a three-app monorepo (backend, dashboard, store) with independent deploys sharing one PostgreSQL schema via Drizzle ORM.",
+      "Built the admin dashboard on React 19, TanStack Router/Query/Table, and shadcn/ui — revenue and order metrics, category and payment-method breakdowns, and product/order management.",
+      "Built the Express + TypeScript API with Drizzle migrations, authentication, and Cloudinary-backed media uploads.",
+      "Built the Next.js 16 storefront on a shared shadcn/ui component layer and Tailwind v4.",
+    ],
+  },
+  {
     name: "Dhruvo",
     tagline: "Real-time AI voice calling pipeline",
-    duration: "2025 – Present",
+    duration: "2025 – 2025",
     description:
       "A production-minded voice pipeline that connects an AI agent to real inbound and outbound phone calls. Asterisk handles SIP routing, LiveKit carries live media, and the reasoning loop manages interruptions and turn-taking.",
     stack: ["LLM", "Asterisk", "LiveKit", "Python", "WebSockets"],
@@ -46,7 +74,7 @@ export const projects: ProjectEntry[] = [
   {
     name: "NeuraFlow",
     tagline: "No-code AI agent builder",
-    duration: "2025 – Present",
+    duration: "2025 – 2026",
     description:
       "A visual system for composing agent workflows as graphs and deploying the same definition across web chat, WhatsApp, Microsoft Teams, Slack, and SMS.",
     stack: [

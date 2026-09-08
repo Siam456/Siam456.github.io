@@ -48,7 +48,7 @@ export function Recommendations() {
       <div className="grid min-w-0 border-t border-line lg:grid-cols-[1.08fr_.92fr]">
         <div className="min-w-0 lg:border-r lg:border-line lg:pr-16">
           <article className="relative flex flex-col justify-between py-10 lg:py-14">
-            <span className="font-display text-7xl leading-none text-primary-soft" aria-hidden="true">“</span>
+            <span className="font-display text-7xl leading-none text-primary-dark/70" aria-hidden="true">“</span>
             <blockquote className="my-10 max-w-2xl font-display text-2xl font-semibold leading-[1.5] tracking-[-0.025em] text-ink md:text-3xl">
               {pullQuotes[featured.id]}
             </blockquote>

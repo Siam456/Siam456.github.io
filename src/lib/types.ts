@@ -28,12 +28,18 @@ export interface ExperienceEntry {
   stack: string[];
 }
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
+
 export interface ProjectEntry {
   name: string;
   tagline: string;
   description: string;
   duration: string;
   url?: string;
+  links?: ProjectLink[];
   current?: boolean;
   stack: string[];
   highlights: string[];

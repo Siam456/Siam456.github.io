@@ -43,7 +43,7 @@ export function Hero() {
             <span className="hero-status-availability"><i aria-hidden="true" /> Available for meaningful work</span>
           </div>
           <h1 className="mt-8 font-display text-[clamp(3.25rem,5.5vw,6rem)] font-extrabold leading-[.96] tracking-[-0.058em] text-balance">
-            I build dependable software <span className="text-faint">from interface to infrastructure.</span>
+            I build dependable software <span className="text-ghost-fade">from interface to infrastructure.</span>
           </h1>
           <p className="mt-7 max-w-2xl text-base leading-7 text-muted md:text-lg md:leading-8">I design and ship full-stack products, scalable backend systems, cloud infrastructure, and applied AI—from user experience and APIs to real-time services and production deployment.</p>
           <div className="mt-8 flex flex-wrap gap-3">

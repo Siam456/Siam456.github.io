@@ -40,7 +40,7 @@ export function Section({
             {eyebrow}
           </p>
           <h2 className="mt-4 font-display text-[38px] font-bold leading-[1.1] tracking-[-0.035em] text-ink text-balance md:text-[56px]">
-            {title}{titleMuted && <> <span className="text-faint">{titleMuted}</span></>}
+            {title}{titleMuted && <> <span className="text-ghost-fade">{titleMuted}</span></>}
           </h2>
           {description && (
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted">

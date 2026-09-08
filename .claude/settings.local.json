@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"d:/_work/portfolio\" -maxdepth 2 2>/dev/null; echo \"---\"; find / -iname \"*Hasibul_Hasan_Resume*\" 2>/dev/null)",
+      "Read(//d//**)",
+      "Bash(python3 -c ' *)",
+      "WebFetch(domain:fitsomnia.com)",
+      "Bash(npm -v)",
+      "Bash(npm create *)",
+      "Bash(npm install *)",
+      "Bash(npm ls *)",
+      "Bash(cd \"d:/_work/portfolio\" && rm -f src/App.css src/assets/hero.png src/assets/react.svg public/vite.svg)",
+      "Bash(rm -f public/icons.svg)",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "Bash(chromium-cli --session portfolio)",
+      "Bash(node \"C:/Users/BS01083/AppData/Local/Temp/claude/d---work-portfolio/567a50f3-a00e-46a3-890d-13e3b363ee8e/scratchpad/shot.js\")",
+      "Bash(node shot.cjs)",
+      "WebFetch(domain:mui.com)",
+      "WebFetch(domain:claude.ai)",
+      "Bash(curl -sf http://localhost:5175)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5173/writing)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5173/)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s http://localhost:5173/writing)",
+      "Bash(node shot2.cjs)",
+      "Bash(node shot3.cjs)"
+    ],
+    "additionalDirectories": [
+      "d:\\_work\\portfolio\\src"
+    ]
+  }
+}
