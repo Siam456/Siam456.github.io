@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { FiArrowDown, FiArrowUpRight, FiBox, FiCloud, FiCode, FiCpu, FiDatabase, FiDownload, FiFileText } from "react-icons/fi";
+import { FiArrowDown, FiArrowUpRight, FiDownload, FiFileText } from "react-icons/fi";
 import { Container } from "../layout/Container";
+import { HeroTerminal } from "./HeroTerminal";
 import { profile } from "../../lib/data";
 
 export function Hero() {
@@ -34,9 +35,9 @@ export function Hero() {
         <span className="blueprint-plus blueprint-plus-six" />
       </div>
 
-      <Container className="relative flex min-h-[92vh] max-w-[1480px] items-center py-28 lg:px-12 lg:py-32 xl:px-14">
-        <div className="grid w-full items-center gap-16 lg:grid-cols-[minmax(0,1.08fr)_minmax(440px,.92fr)] lg:gap-14 xl:gap-24">
-        <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, ease: "easeOut" }} className="relative z-10 max-w-3xl text-left">
+      <Container className="relative flex min-h-[88vh] max-w-[1480px] items-center py-24 lg:px-12 lg:py-28 xl:px-14">
+        <div className="grid w-full items-center gap-16 lg:grid-cols-[minmax(0,1fr)_minmax(500px,0.98fr)] lg:items-stretch lg:gap-14 xl:gap-20">
+        <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, ease: "easeOut" }} className="relative z-10 flex max-w-3xl flex-col justify-center text-left">
           <div className="hero-status" aria-label="Senior Software Engineer, available for meaningful work">
             <span className="hero-status-role">Senior Software Engineer</span>
             <span className="hero-status-rule" aria-hidden="true" />
@@ -58,34 +59,8 @@ export function Hero() {
           <p className="mt-12 text-xs font-medium tracking-[0.02em] text-faint">Brain Station 23 <span className="mx-2 text-line">·</span> 4+ years building production systems <span className="mx-2 text-line">·</span> Dhaka</p>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.12, ease: "easeOut" }} className="hero-workspace" aria-label="A live software engineering workspace">
-          <div className="workspace-aura" />
-          <motion.div className="workspace-window" animate={{ y: [0, -5, 0] }} transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}>
-            <div className="workspace-bar"><span /><span /><span /><small>agent-workflow.ts</small><i>LIVE</i></div>
-            <div className="workspace-body">
-              <div className="workspace-sidebar"><FiCode /><FiCpu /><FiBox /><FiCloud /></div>
-              <div className="workflow-canvas">
-                <svg viewBox="0 0 420 280" aria-hidden="true">
-                  <path className="workflow-path workflow-path-main" d="M78 140 C125 140 125 76 174 76 S230 140 272 140" />
-                  <path className="workflow-path workflow-path-branch" d="M174 76 C220 76 222 218 286 218" />
-                  <path className="workflow-path workflow-path-deploy" d="M272 140 C320 140 324 92 365 92" />
-                </svg>
-                <div className="flow-node flow-input"><FiCode /><span>Request</span><small>validated</small></div>
-                <div className="flow-node flow-agent"><FiCpu /><span>Orchestrator</span><small>reasoning</small></div>
-                <div className="flow-node flow-api"><FiBox /><span>Tools</span><small>parallel ×4</small></div>
-                <div className="flow-node flow-cloud"><FiCloud /><span>Deploy</span><small>healthy</small></div>
-                <div className="flow-node flow-state"><FiDatabase /><span>State</span><small>persistent</small></div>
-                <div className="flow-pulse" />
-              </div>
-            </div>
-          </motion.div>
-          <motion.div className="workspace-float workspace-metric" animate={{ y: [0, 7, 0], rotate: [-1.5, 0, -1.5] }} transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}>
-            <span>Production health</span><strong>99.98%</strong><div><i /><i /><i /><i /><i /><i /></div>
-          </motion.div>
-          <motion.div className="workspace-float workspace-event" animate={{ y: [0, -6, 0] }} transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: .7 }}>
-            <span className="event-icon"><FiArrowUpRight /></span><div><small>Latest event</small><strong>Case resolved</strong></div><i>12ms</i>
-          </motion.div>
-          <div className="workspace-tags"><span>React</span><span>Node.js</span><span>Python</span><span>AWS</span></div>
+        <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.12, ease: "easeOut" }} className="flex min-h-0 flex-col justify-center">
+          <HeroTerminal />
         </motion.div>
         </div>
       </Container>

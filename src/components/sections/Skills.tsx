@@ -1,5 +1,6 @@
 import { FiActivity, FiCloud, FiDatabase, FiGitBranch, FiLayout } from "react-icons/fi";
 import { Section } from "../layout/Section";
+import { CodeEditor } from "./CodeEditor";
 
 const capabilities = [
   { icon: FiGitBranch, tone:"teal", label: "Agent systems", tools: "LangGraph · LangChain · MCP · RAG", text: "Designing stateful, tool-using workflows with routing, parallel execution, streaming, memory, and human review." },
@@ -20,6 +21,12 @@ export function Skills() {
             <p className="mt-5 max-w-xl text-sm leading-7 text-muted">{item.text}</p>
           </article>
         ))}
+      </div>
+      <div className="mt-16 md:mt-24">
+        <p className="mb-6 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-faint">
+          A deep agent, wired to real tools
+        </p>
+        <CodeEditor />
       </div>
     </Section>
   );
