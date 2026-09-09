@@ -5,7 +5,8 @@ export const profile: Profile = {
   role: "Senior Software Engineer",
   location: "Dhaka, Bangladesh",
   email: "hasibulsiam27@gmail.com",
-  phone: "01755770538",
+  phone: "+880 1643126129",
+  whatsapp: "01643126129",
   site: "siam456.github.io",
   tagline: "I build the systems that let AI agents act, not just answer.",
   summary:

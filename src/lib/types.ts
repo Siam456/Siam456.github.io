@@ -10,6 +10,7 @@ export interface Profile {
   location: string;
   email: string;
   phone: string;
+  whatsapp: string;
   site: string;
   tagline: string;
   summary: string;

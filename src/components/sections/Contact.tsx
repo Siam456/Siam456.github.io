@@ -1,4 +1,5 @@
 import { FiArrowUpRight } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 import { Section } from "../layout/Section";
 import { Button } from "../ui/Button";
 import { SocialIcon } from "../ui/SocialIcon";
@@ -17,6 +18,14 @@ export function Contact() {
         <div>
           <p className="text-sm text-muted">{profile.email}</p>
           <p className="mt-1 text-sm text-muted">{profile.phone}</p>
+          <a
+            href={`https://wa.me/880${profile.whatsapp.replace(/^0/, "")}`}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-primary"
+          >
+            <FaWhatsapp className="h-4 w-4" /> WhatsApp · {profile.whatsapp}
+          </a>
         </div>
 
         <div className="flex flex-wrap items-center gap-4">

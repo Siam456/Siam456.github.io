@@ -40,7 +40,7 @@ export function Navbar({ page, onNavigate }: NavbarProps) {
           <button
             type="button"
             onClick={() => setDark((value) => !value)}
-            className="grid h-9 w-11 place-items-center rounded-md border border-primary/25 bg-secondary text-secondary-foreground transition hover:border-primary hover:bg-primary hover:text-primary-foreground"
+            className="grid h-9 w-9 place-items-center rounded-md text-muted transition-colors hover:bg-surface-alt hover:text-primary"
             aria-label={dark ? "Use light theme" : "Use dark theme"}
             title={dark ? "Use light theme" : "Use dark theme"}
           >
@@ -49,7 +49,7 @@ export function Navbar({ page, onNavigate }: NavbarProps) {
         </nav>
 
         <div className="flex items-center gap-2 md:hidden">
-          <button type="button" onClick={() => setDark((value) => !value)} className="grid h-9 w-11 place-items-center rounded-md border border-primary/25 bg-secondary text-secondary-foreground" aria-label={dark ? "Use light theme" : "Use dark theme"}>
+          <button type="button" onClick={() => setDark((value) => !value)} className="grid h-9 w-9 place-items-center rounded-md text-muted transition-colors hover:bg-surface-alt hover:text-primary" aria-label={dark ? "Use light theme" : "Use dark theme"}>
             {dark ? <FiSun className="h-4 w-4" /> : <FiMoon className="h-4 w-4" />}
           </button>
           <button type="button" onClick={() => setOpen((prev) => !prev)} className="grid h-9 w-9 place-items-center text-ink" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open}>
