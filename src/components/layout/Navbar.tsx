@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
+import { LuCodeXml } from "react-icons/lu";
 import { Container } from "./Container";
 import { profile } from "../../lib/data";
 
@@ -28,9 +29,10 @@ export function Navbar({ page, onNavigate }: NavbarProps) {
         <a
           href="/"
           onClick={(event) => navigateTo(event, "home")}
-          className="font-display text-base font-bold text-primary"
+          className="inline-flex items-center gap-2 font-display text-base font-bold text-ink"
           aria-label={`${profile.name} — home`}
         >
+          <LuCodeXml className="h-4 w-4 text-primary" aria-hidden="true" />
           {profile.name}
         </a>
 
