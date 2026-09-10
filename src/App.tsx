@@ -10,6 +10,7 @@ import { Recommendations } from "./components/sections/Recommendations";
 import { Impact } from "./components/sections/Impact";
 import { Writing } from "./components/pages/Writing";
 import { WritingDetail } from "./components/pages/WritingDetail";
+import { trackPageview } from "./lib/analytics";
 
 type Page = "home" | "writing" | "article";
 
@@ -18,7 +19,10 @@ function App() {
   const [page, setPage] = useState<Page>(getPage);
 
   useEffect(() => {
-    const syncPage = () => setPage(getPage());
+    const syncPage = () => {
+      setPage(getPage());
+      trackPageview();
+    };
     window.addEventListener("popstate", syncPage);
     return () => window.removeEventListener("popstate", syncPage);
   }, []);
@@ -27,12 +31,15 @@ function App() {
     const path = nextPage === "writing" ? "/writing" : "/";
     window.history.pushState({}, "", path);
     setPage(nextPage);
+    trackPageview(path);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const openArticle = (slug: string) => {
-    window.history.pushState({}, "", `/writing/${slug}`);
+    const path = `/writing/${slug}`;
+    window.history.pushState({}, "", path);
     setPage("article");
+    trackPageview(path);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 

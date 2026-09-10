@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_GA_ID: ${{ secrets.VITE_GA_ID }}
+          VITE_CLARITY_ID: ${{ secrets.VITE_CLARITY_ID }}
       - name: Add SPA route fallback
         run: cp dist/index.html dist/404.html
       - uses: actions/configure-pages@v5
